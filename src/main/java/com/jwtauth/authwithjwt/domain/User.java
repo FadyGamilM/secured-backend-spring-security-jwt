@@ -17,10 +17,11 @@ import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Entity
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "username"))
-@NoArgsConstructor
+@RequiredArgsConstructor
 @AllArgsConstructor
 @Data
 public class User {
